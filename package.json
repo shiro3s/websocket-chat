@@ -1,0 +1,12 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "turbo": "^2.5.5"
+  },
+  "packageManager": "bun@1.1.7",
+  "workspaces": [
+    "apps/*"
+  ]
+}
