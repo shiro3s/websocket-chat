@@ -1,11 +1,13 @@
 {
   "name": "chat",
   "version": "1.0.0",
-  "dependencies": {},
+  "scripts": {
+    "start": "turbo run start"
+  },
   "devDependencies": {
     "turbo": "^2.5.5"
   },
-  "packageManager": "bun@1.1.7",
+  "packageManager": "npm@10.9.2",
   "workspaces": [
     "apps/*"
   ]
