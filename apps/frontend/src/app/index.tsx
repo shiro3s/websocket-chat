@@ -1,5 +1,5 @@
 import React from "react";
-import {ChatUI} from "@/components/chatUI"
+import {ChatUI} from "@/components/features/chatUI"
 
 import styles from "./style.module.css"
 
