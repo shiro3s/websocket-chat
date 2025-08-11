@@ -5,10 +5,14 @@
     "start": "turbo run start"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.1.4",
     "turbo": "^2.5.5"
   },
   "packageManager": "npm@10.9.2",
   "workspaces": [
     "apps/*"
+  ],
+  "sideEffects": [
+    "*.module.css"
   ]
 }

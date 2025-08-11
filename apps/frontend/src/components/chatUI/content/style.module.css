@@ -1,0 +1,6 @@
+.container {
+  padding: 1rem;
+  overflow-y: auto;
+  flex: 1 1 0%;
+  box-sizing: border-box; 
+}

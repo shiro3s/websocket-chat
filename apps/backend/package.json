@@ -10,7 +10,6 @@
     "ws": "^8.18.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.1.4",
     "@types/express": "^5.0.3",
     "@types/ws": "^8.18.1",
     "typescript": "^5.9.2"
