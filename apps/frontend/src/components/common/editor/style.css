@@ -1,0 +1,18 @@
+.ProseMirror {
+  outline: none;
+  padding: 4px 8px 4px 14px;
+  line-height: 1.2;
+  color: #606266;
+}
+
+.ProseMirror p[data-placeholder] {
+  position: relative;
+}
+
+.ProseMirror p[data-placeholder]::after {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  content: attr(data-placeholder);
+  color: #9b9b9c;
+}
