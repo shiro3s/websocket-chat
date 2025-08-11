@@ -5,3 +5,8 @@
   border: 1px solid #d1d9e0;
   border-radius: 8px;
 }
+
+.action {
+  display: flex;
+  justify-content: space-between;
+}

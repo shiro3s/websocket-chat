@@ -1,0 +1,188 @@
+.container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  box-sizing: border-box;
+  cursor: pointer;
+  white-space: nowrap;
+  outline: none;
+  font-weight: 500;
+  user-select: none;
+  appearance: none;
+  border-radius: 4px;
+}
+
+.container[data-size="small"] {
+  height: 28px;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.container[data-size="medium"] {
+  height: 32px;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.container[data-size="large"] {
+  height: 40px;
+  font-size: 14px;
+  padding: 12px 18px;
+}
+
+.container:disabled {
+  cursor: not-allowed;
+}
+
+.container[data-theme="light"] {
+  border: 1px solid #d1d9e0;
+  background-color: #f6f8fa;
+  color: #606266;
+}
+.container[data-theme="light"]:hover {
+  background-color: #eff2f5;
+}
+.container[data-theme="light"]:active {
+  background-color: #e6eaef;
+}
+.container[data-theme="light"]:disabled {
+  background-color: #eff2f5;
+  border-color: #818b981a;
+  color: #818b98;  
+}
+.container[data-theme="light"]:is([data-outlined="true"]) {
+  background-color: #fff;
+  border: 1px solid #d1d9e0;
+  color: #606266;
+}
+.container[data-theme="light"]:is([data-outlined="true"]):hover {
+  background-color: #f6f8fa;
+}
+.container[data-theme="light"]:is([data-outlined="true"]):active {
+  background-color: #e6eaef;
+}
+.container[data-theme="light"]:is([data-outlined="true"]):disabled {
+  background-color: #fff;
+  border: 1px solid #818b981a;
+  color: #818b98;  
+}
+
+.container[data-theme="primary"] {
+  border: 1px solid #0056b3;
+  background-color: #007bff;
+  color: #fff;
+}
+.container[data-theme="primary"]:hover {
+  background-color: #339cff;
+}
+.container[data-theme="primary"]:active {
+  background-color: #0062cc;
+}
+.container[data-theme="primary"]:disabled {
+  background-color: #e0eafc;
+  border-color: #b0c4de;
+}
+.container[data-theme="primary"]:is([data-outlined="true"]) {
+  background-color: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+.container[data-theme="primary"]:is([data-outlined="true"]):hover {
+  color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+  border-color: #007bff;
+
+}
+.container[data-theme="primary"]:is([data-outlined="true"]):active {
+  background-color: rgba(0, 123, 255, 0.2);
+  border-color: #0056b3;
+  color: #0056b3;
+}
+.container[data-theme="primary"]:is([data-outlined="true"]):disabled {
+  background-color: #fff;
+  border-color: #b8daff;
+  color: #b8daff;
+}
+
+
+.container[data-theme="success"] {
+  border: 1px solid #1e7334;
+  background-color: #28a745;
+  color: #fff;
+}
+.container[data-theme="success"]:hover {
+  background-color: #45c062;
+}
+.container[data-theme="success"]:active {
+  background-color: #218838;
+}
+.container[data-theme="success"]:disabled {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.container[data-theme="success"]:is([data-outlined="true"]) {
+  background-color: #fff;
+  border: 1px solid #28a745;
+  color: #28a745;
+}
+.container[data-theme="success"]:is([data-outlined="true"]):hover {
+  background-color: rgba(40, 167, 69, 0.1);
+  border-color: #28a745;
+  color: #28a745;
+}
+.container[data-theme="success"]:is([data-outlined="true"]):active {
+  background-color: rgba(40, 167, 69, 0.2);
+  border-color: #218838;
+  color: #218838;
+}
+.container[data-theme="success"]:is([data-outlined="true"]):disabled {
+  background-color: #fff;
+  border-color: #c3e6cb;
+  color: #c3e6cb;
+}
+
+
+.container[data-theme="dark"] {
+  border: 1px solid #000;
+  background-color: #212529;
+  color: #fff;
+}
+.container[data-theme="dark"]:hover {
+  background-color: #343a40;
+}
+.container[data-theme="dark"]:active {
+  background-color: #1a1d20;
+}
+.container[data-theme="dark"]:disabled {
+  background-color: #dee2e6;
+  border-color: #ced4da;
+}
+.container[data-theme="dark"]:is([data-outlined="true"]) {
+  border: 1px solid #212529;
+  background-color: #fff;
+  color: #212529
+}
+.container[data-theme="dark"]:is([data-outlined="true"]):hover {
+  border-color: #212529;
+  background-color: rgba(33, 37, 41, 0.05);
+  color: #212529
+}
+.container[data-theme="dark"]:is([data-outlined="true"]):active {
+  border-color: #1a1d20;
+  background-color: rgba(33, 37, 41, 0.1);
+  color: #1a1d20
+}
+.container[data-theme="dark"]:is([data-outlined="true"]):disabled {
+  border-color: #ced4da;
+  background-color: #fff;
+  color: #ced4da;
+}
+
+.container[data-block="true"] {
+  width: 100%;
+}
+
+.container[data-round="true"] {
+  border-radius: 20px;
+}
