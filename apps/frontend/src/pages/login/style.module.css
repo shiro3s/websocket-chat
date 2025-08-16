@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  max-width: 568px;
+  margin: 20vh auto 0;
+  box-sizing: border-box;
+  padding: 20px 20px 32px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 #dcdcdc;
+}
+
+.title {
+  font-size: 1.75rem;
+  color: #606266;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 32px;
+}
+
+.label {
+  font-size: 14px;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.error {
+  font-size: 12px;
+  color: #c24239;
+  padding-top: 3px;
+}

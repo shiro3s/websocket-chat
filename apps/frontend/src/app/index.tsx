@@ -1,15 +1,15 @@
 import React from "react";
-import { ChatUI } from "@/components/features/chatUI";
-import { useWebsocket } from "@/hooks/useWebsocket";
-
-import styles from "./style.module.css";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router";
+import { AppRoutes } from "@/routes";
+import { store } from "@/store";
 
 export const App: React.FC = () => {
-	useWebsocket();
-
 	return (
-		<div className={styles.container}>
-			<ChatUI />
-		</div>
+		<Provider store={store}>
+			<BrowserRouter>
+				<AppRoutes />
+			</BrowserRouter>
+		</Provider>
 	);
 };
