@@ -1,9 +1,9 @@
 .container {
   padding: 1rem;
   box-sizing: border-box;
-  background-color: #000;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  background-color: #fff;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0 0 8px 0 #cdcdcd;
 }
 
 .name {

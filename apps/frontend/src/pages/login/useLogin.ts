@@ -1,6 +1,8 @@
 import { valibotResolver } from "@hookform/resolvers/valibot";
 import { useForm } from "react-hook-form";
 import { nonEmpty, object, pipe, string } from "valibot";
+import { useAppDispatch } from "@/libs/redux";
+import { login } from "@/store/authStore";
 
 type FormState = {
 	username: string;
@@ -13,6 +15,7 @@ const schema = object({
 });
 
 export const useLogin = () => {
+	const dispatch = useAppDispatch();
 	const {
 		register,
 		handleSubmit,
@@ -23,6 +26,7 @@ export const useLogin = () => {
 
 	const onSubmit = (formValue: FormState) => {
 		console.log(formValue);
+		dispatch(login());
 	};
 
 	return {
